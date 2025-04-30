@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+    <div class="weather-container">
+        <h2>Weather Dashboard</h2>
+        <input type="text" id="cityInput" placeholder="Enter city name" />
+        <button onclick="getWeather()">Get Weather</button>
+        <button onclick="getWeatherByLocation()">📍 Use My Location</button>
+
+        <!-- Toggle between Celsius and Fahrenheit -->
+        <label class="toggle">
+            <input type="checkbox" id="unitToggle" onchange="toggleUnit()"> °C / °F
+        </label>
+
+        <!-- Displays previous search history -->
+        <div class="history-container" id="searchHistory"></div>
+        <!-- Current weather result -->
+        <div class="weather-result" id="weatherResult"></div>
+        <!-- 5-day forecast -->
+        <div class="forecast-container" id="forecast"></div>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+
+</html>

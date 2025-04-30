@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    min-height: 100vh;
+    transition: background 0.5s ease;/* Smooth background transition */
+  }
+  .weather-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;/* Keeps the layout clean */
+  }
+  input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+  }
+  button {
+    margin: 10px 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+  }
+  .toggle {
+    margin-top: 10px;
+    display: inline-block;
+  }
+  .weather-result, .forecast-container, .history-container {
+    margin-top: 20px;
+  }
+  .forecast-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  .forecast-card {
+    background: rgba(255,255,255,0.2);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+  }
+  .history-container button {
+    background-color: #2c3e50;
+    margin: 5px;
+    padding: 5px 10px;
+  }
+  @media (max-width: 768px) {
+    .forecast-card {
+      width: 80px;/* Responsive for tablets/phones */
+    }
+  }
